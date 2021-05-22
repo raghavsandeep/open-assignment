@@ -1,0 +1,125 @@
+<section>
+    <section class="landing-section" [style.background-image]="'url(/assets/images/landing-bg.png )'">
+        <div class="container">
+            <!--header code-->
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <a href=""><img src="assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="col-12 col-md-8 nav-tags text-right">
+                    <a href="">Products</a>
+                    <a href="">Solutions</a>
+                    <a href="">Pricing</a>
+                    <button class="login-btn">Login</button>
+                    <button class="get-started-btn">Get Started</button>
+                </div>
+            </div>
+            <!--Landing text and calculator-->
+            <div class="row pt-landing">
+                <div class="col-12 col-md-5">
+                    <p class="landing-text">We make it Super Simple</p>
+                    <p class="landing-text-border"></p>
+                    <img src="assets/images/collect_img-video.png" class="landing-image" alt="">
+                </div>
+                <div class="col-12 col-md-5 pl-75">
+                    <div class="calculator-data-box">
+                        <p class="eligibility-header">Eligibility Calculator</p>
+                        <div class="plr-30">
+                            <div>
+                                <p>Monthly Income</p>
+                                <p>&#8377; {{value}}</p>
+                                <ngx-slider [(value)]="value" [options]="options"></ngx-slider>
+                            </div>
+                            <div>
+                                <p>Monthly Expense</p>
+                                <p>&#8377; {{value2}}</p>
+                                <ngx-slider [(value)]="value2" [options]="options2"></ngx-slider>
+                            </div>
+                            <div>
+                                <p>Repayment Tenure</p>
+                                <select name="" id="">
+                                    <option value="">3 Months</option>
+                                    <option value="">6 Months</option>
+                                    <option value="">9 Months</option>
+                                    <option value="">12 Months</option>
+                                    <option value="">18 Months</option>
+                                    <option value="">24 Months</option>
+                                </select>
+                            </div>
+                            <div class="py-3">
+                                <p>Do You have any existing loans?
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="pb-5">
+                                <p>EMI of existing loan (optional)</p>
+                                <input type="text" class="text-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 p-0">
+                    <div class="calculator-box">
+                        <div>
+                            <p class="text-center box-text">Loan Amount</p>
+                            <p class="text-center box-value">&#8377; 100000</p>
+                        </div>
+                        <div>
+                            <p class="text-center box-text">Monthly EMI will be</p>
+                            <p class="text-center box-value">&#8377; 15000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="card-wave-bg" [style.background-image]="'url(/assets/images/sol_wave_bg.svg )'">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="box-card">
+                                <img src="assets/images/Get Paid Instantly.png" alt="">
+                                <p class="box-card-header"><strong>Quick cash disburse</strong></p>
+                                <p class="box-card-text">Get terms loans that your business needs within 72 hrs</p>
+                            </div>
+                            <div class="box-card">
+                                <img src="assets/images/Low interest rate.png" alt="">
+                                <p class="box-card-header"><strong>Low-interest rate</strong></p>
+                                <p class="box-card-text">Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
+                            </div>
+                            <div class="box-card">
+                                <img src="assets/images/Secure Payments.png" alt="">
+                                <p class="box-card-header"><strong>Zero Paperwork</strong></p>
+                                <p class="box-card-text">Get started instantly by submitting only your basic details & bank statements</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pt-120">
+                            <div class="box-card">
+                                <img src="assets/images/freelancer_feature_icon_6@1.5x.png" alt="">
+                                <p class="box-card-header"><strong>Ace your business finances</strong></p>
+                                <p class="box-card-text">Manage banking, accounting & everything in between, on one platform</p>
+                            </div>
+                            <div class="box-card">
+                                <img src="assets/images/Covid.png" alt="">
+                                <p class="box-card-header"><strong>Loans to fight COVID-19</strong></p>
+                                <p class="box-card-text">Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 pt-180">
+                    <p class="banner-text">Boost your business with Open</p>
+                    <p class="banner-text-border"></p>
+                    <p class="grey-text">Get your hands on a term loan that’s crafted for your business</p>
+                    <button class="open-account-btn">Get an Open Account</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

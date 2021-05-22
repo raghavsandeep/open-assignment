@@ -1,1 +1,135 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'montserrat-medium';
+    src:
+         url('assets/fonts/Montserrat-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+  @font-face {
+    font-family: 'montserrat-regular';
+    src:
+         url('assets/fonts/Montserrat-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+  @font-face {
+    font-family: 'opensans-regular';
+    src:
+         url('assets/fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+  .pt-landing{
+      padding-top: 6vh;
+  }
+  .plr-30{
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+  .p-0{
+      padding: 0px !important;
+  }
+  .pl-75{
+      padding-left: 75px !important;
+  }
+  .pt-120{
+      padding-top: 120px;
+  }
+  .pt-180{
+      padding-top: 180px;
+  }
+  body{
+    background: #FCFCFF 0% 0% no-repeat padding-box;
+    overflow-x: hidden;
+  }
+  .ngx-slider {
+    margin: 0px 0 30px !important;
+}
+.text-right{
+    text-align: right;
+}
+  .ngx-slider .ngx-slider-pointer {
+    width: 25px !important;
+    height: 25px !important;
+    top: -11px !important;
+    background-color: #fff !important;
+    border: 1px solid rgb(233, 233, 233);
+}
+.ngx-slider-model-value{
+    display: none !important;
+}
+.ngx-slider .ngx-slider-pointer:focus {
+    outline: none !important;
+}
+.ngx-slider .ngx-slider-pointer:after {
+    content: '';
+    width: 13px !important;
+    height: 13px !important;
+    position: absolute;
+    top: 5px !important;
+    left: 5px !important;
+    border-radius: 9px !important;
+    background: #684a99 !important;
+}
+.ngx-slider .ngx-slider-bubble {
+    cursor: default;
+    bottom: -30px !important;
+    padding: 1px 3px;
+    color: #55637d;
+    font-size: 10px !important;
+}
+/*slider switch class*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 22px;
+    float: right;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #663399;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #663399;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
